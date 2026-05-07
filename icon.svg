@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="round">
+      <rect width="128" height="128" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="128" height="128" rx="22" fill="#1e293b"/>
+
+  <!-- Mountain -->
+  <polygon
+    points="64,18 110,96 18,96"
+    fill="#67b8e3"
+    clip-path="url(#round)"/>
+
+  <!-- Mountain right face highlight -->
+  <polygon
+    points="64,18 110,96 87,96"
+    fill="#89ddff"
+    opacity="0.4"
+    clip-path="url(#round)"/>
+</svg>

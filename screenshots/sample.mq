@@ -1,0 +1,26 @@
+# Tarn — still water, deep color
+
+def is_glacial(alt):
+  alt > 3500
+end
+
+def lake_summary(name, depth, altitude):
+  let frozen = altitude > 4200
+  | let clarity = if (frozen): 0 else: depth * 0.87
+  | s"## ${name}
+- altitude: ${altitude}m
+- depth: ${depth}m
+- clarity index: ${clarity}"
+end
+
+def process_lakes():
+  let lakes = [
+    {name: "Tarn", depth: 42, alt: 3800},
+    {name: "Cirque", depth: 18, alt: 4300},
+  ]
+  | filter(->(l): is_glacial(l[:alt]);)
+  | map(->(l): lake_summary(l[:name], l[:depth], l[:alt]);)
+  | join("\n\n")
+end
+
+| process_lakes()

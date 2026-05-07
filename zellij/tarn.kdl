@@ -1,0 +1,15 @@
+themes {
+    tarn {
+        bg      "#2a3444"
+        fg      "#e2e8f0"
+        black   "#1e293b"
+        red     "#fc8181"
+        green   "#67b8e3"
+        yellow  "#f6ad55"
+        blue    "#4a9fc8"
+        magenta "#b794f4"
+        cyan    "#85d4ff"
+        white   "#e2e8f0"
+        orange  "#f6ad55"
+    }
+}

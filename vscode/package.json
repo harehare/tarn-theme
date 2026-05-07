@@ -1,0 +1,46 @@
+{
+  "name": "tarn-theme",
+  "displayName": "Tarn Theme",
+  "description": "A dark theme inspired by a high-altitude glacial lake — deep navy, steel blue, teal functions, and light azure strings.",
+  "version": "0.1.0",
+  "publisher": "harehare",
+  "license": "MIT",
+  "icon": "icon.png",
+  "homepage": "https://github.com/harehare/tarn-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harehare/tarn-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harehare/tarn-theme/issues"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "tarn",
+    "blue",
+    "teal",
+    "cyan",
+    "slate",
+    "color-theme"
+  ],
+  "galleryBanner": {
+    "color": "#1e293b",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Tarn",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tarn-color-theme.json"
+      }
+    ]
+  }
+}
