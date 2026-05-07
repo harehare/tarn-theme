@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="icon.png" width="80" alt="Tarn">
+  <img src="https://raw.githubusercontent.com/harehare/tarn-theme/main/vscode/icon.png" width="80" alt="Tarn">
   <h1>Tarn Theme for VS Code</h1>
   <p>A dark theme inspired by the stillness of a high-altitude glacial lake — deep navy depths, steel blue shimmers, and teal-to-azure syntax highlighting.</p>
 
