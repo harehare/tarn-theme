@@ -2,7 +2,6 @@
   <img src="icon.svg" width="80" alt="Tarn">
   <h1>Tarn</h1>
   <p>A dark color theme for VS Code and Neovim, inspired by the stillness of a high-altitude glacial lake: deep navy depths, steel blue shimmers, and teal-to-azure light across the surface.</p>
-  <p>Also used in the [mq playground](https://mqlang.org/playground).</p>
 </div>
 
 <div align="center">
@@ -10,6 +9,8 @@
   <img src="screenshots/lua.png" width="32%" alt="Lua">
   <img src="screenshots/mq.png" width="32%" alt="mq">
 </div>
+
+Also used in the [mq playground](https://mqlang.org/playground).
 
 ## Color Palette
 
