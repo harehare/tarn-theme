@@ -23,8 +23,8 @@ local c = {
   number    = "#de935f",
   variable  = "#9cdcfe",
   escape    = "#67e8f9",
-  operator  = "#94a3b8",
-  comment   = "#6b7a90",
+  operator  = "#a3b2c6",
+  comment   = "#7e8fa6",
   constant  = "#85d4ff",
   success   = "#68d391",
   warning   = "#f6ad55",
@@ -174,7 +174,7 @@ hl("@constant.builtin",           { fg = c.constant })
 hl("@type",                       { fg = c.accent })
 hl("@type.builtin",               { fg = c.accent, italic = true })
 
-hl("@property",                   { fg = c.variable })
+hl("@property",                   { fg = c.escape })
 hl("@attribute",                  { fg = c.func })
 
 hl("@operator",                   { link = "Operator" })

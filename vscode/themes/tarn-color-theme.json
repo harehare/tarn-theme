@@ -211,7 +211,7 @@
       "name": "Comments",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#6b7a90",
+        "foreground": "#7e8fa6",
         "fontStyle": "italic"
       }
     },
@@ -234,7 +234,7 @@
       "name": "Operators",
       "scope": ["keyword.operator", "punctuation.operator"],
       "settings": {
-        "foreground": "#94a3b8"
+        "foreground": "#a3b2c6"
       }
     },
     {
@@ -371,7 +371,7 @@
         "punctuation.section"
       ],
       "settings": {
-        "foreground": "#94a3b8"
+        "foreground": "#a3b2c6"
       }
     },
     {
@@ -383,7 +383,7 @@
         "punctuation.definition.array"
       ],
       "settings": {
-        "foreground": "#94a3b8"
+        "foreground": "#a3b2c6"
       }
     },
     {
@@ -446,7 +446,7 @@
       "name": "Markdown blockquote",
       "scope": ["markup.quote"],
       "settings": {
-        "foreground": "#94a3b8",
+        "foreground": "#a3b2c6",
         "fontStyle": "italic"
       }
     },
