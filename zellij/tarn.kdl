@@ -1,6 +1,9 @@
+// Tarn theme — advanced format with explicit selection colors.
+// Palette mirrors the Nushell `theme` table in ~/.config/nushell/config.nu.
 themes {
     tarn {
-        bg      "#2a3444"
+        // Base 16-color palette (used by terminal output inside panes).
+        bg      "#1e293b"
         fg      "#e2e8f0"
         black   "#1e293b"
         red     "#fc8181"
@@ -11,5 +14,132 @@ themes {
         cyan    "#85d4ff"
         white   "#e2e8f0"
         orange  "#f6ad55"
+
+        // UI text — unselected (default pane text, lists, tables).
+        text_unselected {
+            base       226 232 240   // #e2e8f0
+            background 30  41  59    // #1e293b
+            emphasis_0 103 184 227   // #67b8e3
+            emphasis_1 133 212 255   // #85d4ff
+            emphasis_2 86  212 212   // #56d4d4
+            emphasis_3 246 173 85    // #f6ad55
+        }
+        // UI text — selected (mouse selection, list/table highlight).
+        // Pale steel blue on dark navy fg — soft, on-theme, easy to read.
+        text_selected {
+            base       30  41  59    // #1e293b (tarn navy)
+            background 168 197 224   // #a8c5e0 (pale steel blue)
+            emphasis_0 30  41  59
+            emphasis_1 30  41  59
+            emphasis_2 30  41  59
+            emphasis_3 30  41  59
+        }
+
+        // Tab ribbon — inactive tab.
+        ribbon_unselected {
+            base       226 232 240
+            background 42  52  68    // #2a3444
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
+        }
+        // Tab ribbon — active tab.
+        ribbon_selected {
+            base       30  41  59
+            background 103 184 227   // #67b8e3
+            emphasis_0 246 173 85
+            emphasis_1 252 129 129
+            emphasis_2 183 148 244
+            emphasis_3 104 211 145
+        }
+
+        table_title {
+            base       103 184 227
+            background 30  41  59
+            emphasis_0 246 173 85
+            emphasis_1 252 129 129
+            emphasis_2 183 148 244
+            emphasis_3 104 211 145
+        }
+        table_cell_unselected {
+            base       226 232 240
+            background 30  41  59
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
+        }
+        table_cell_selected {
+            base       30  41  59
+            background 168 197 224   // pale steel blue, matches text_selected
+            emphasis_0 30  41  59
+            emphasis_1 30  41  59
+            emphasis_2 30  41  59
+            emphasis_3 30  41  59
+        }
+        list_unselected {
+            base       226 232 240
+            background 30  41  59
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
+        }
+        list_selected {
+            base       30  41  59
+            background 168 197 224
+            emphasis_0 30  41  59
+            emphasis_1 30  41  59
+            emphasis_2 30  41  59
+            emphasis_3 30  41  59
+        }
+
+        frame_selected {
+            base       103 184 227
+            background 30  41  59
+            emphasis_0 246 173 85
+            emphasis_1 252 129 129
+            emphasis_2 183 148 244
+            emphasis_3 104 211 145
+        }
+        frame_highlight {
+            base       246 173 85
+            background 30  41  59
+            emphasis_0 246 173 85
+            emphasis_1 252 129 129
+            emphasis_2 183 148 244
+            emphasis_3 104 211 145
+        }
+
+        exit_code_success {
+            base       104 211 145
+            background 30  41  59
+            emphasis_0 133 212 255
+            emphasis_1 86  212 212
+            emphasis_2 246 173 85
+            emphasis_3 252 129 129
+        }
+        exit_code_error {
+            base       252 129 129
+            background 30  41  59
+            emphasis_0 246 173 85
+            emphasis_1 226 232 240
+            emphasis_2 183 148 244
+            emphasis_3 133 212 255
+        }
+
+        multiplayer_user_colors {
+            player_1  103 184 227
+            player_2  246 173 85
+            player_3  252 129 129
+            player_4  183 148 244
+            player_5  104 211 145
+            player_6  86  212 212
+            player_7  133 212 255
+            player_8  156 220 254
+            player_9  226 232 240
+            player_10 148 163 184
+        }
     }
 }
