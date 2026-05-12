@@ -1,0 +1,66 @@
+# Tarn theme for Alacritty
+# A dark theme inspired by a high-altitude glacial lake.
+# Place this file in ~/.config/alacritty/themes/ and import it:
+#
+#   import:
+#     - ~/.config/alacritty/themes/tarn.toml
+
+[colors.primary]
+background = "#1e293b"
+foreground = "#e2e8f0"
+dim_foreground = "#94a3b8"
+bright_foreground = "#f7fafc"
+
+[colors.cursor]
+text   = "#1e293b"
+cursor = "#67b8e3"
+
+[colors.vi_mode_cursor]
+text   = "#1e293b"
+cursor = "#85d4ff"
+
+[colors.search.matches]
+foreground = "#1e293b"
+background = "#67b8e3"
+
+[colors.search.focused_match]
+foreground = "#1e293b"
+background = "#85d4ff"
+
+[colors.footer_bar]
+foreground = "#e2e8f0"
+background = "#2a3444"
+
+[colors.selection]
+text       = "CellForeground"
+background = "#32404f"
+
+[colors.normal]
+black   = "#1e293b"
+red     = "#fc8181"
+green   = "#68d391"
+yellow  = "#f6ad55"
+blue    = "#67b8e3"
+magenta = "#9cdcfe"
+cyan    = "#56d4d4"
+white   = "#e2e8f0"
+
+[colors.bright]
+black   = "#4a5568"
+red     = "#feb2b2"
+green   = "#9ae6b4"
+yellow  = "#fbd38d"
+blue    = "#85d4ff"
+magenta = "#bfecff"
+cyan    = "#67e8f9"
+white   = "#f7fafc"
+
+[colors.dim]
+black   = "#1e293b"
+red     = "#fc818188"
+green   = "#68d39188"
+yellow  = "#f6ad5588"
+blue    = "#67b8e388"
+magenta = "#9cdcfe88"
+cyan    = "#56d4d488"
+white   = "#94a3b8"

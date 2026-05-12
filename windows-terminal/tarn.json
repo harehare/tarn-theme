@@ -1,0 +1,27 @@
+{
+  "$help": "Add this scheme to the 'schemes' array in your Windows Terminal settings.json, then set 'colorScheme': 'Tarn' in your profile.",
+  "name": "Tarn",
+
+  "background":         "#1e293b",
+  "foreground":         "#e2e8f0",
+  "cursorColor":        "#67b8e3",
+  "selectionBackground":"#32404f",
+
+  "black":              "#1e293b",
+  "red":                "#fc8181",
+  "green":              "#68d391",
+  "yellow":             "#f6ad55",
+  "blue":               "#67b8e3",
+  "purple":             "#9cdcfe",
+  "cyan":               "#56d4d4",
+  "white":              "#e2e8f0",
+
+  "brightBlack":        "#4a5568",
+  "brightRed":          "#feb2b2",
+  "brightGreen":        "#9ae6b4",
+  "brightYellow":       "#fbd38d",
+  "brightBlue":         "#85d4ff",
+  "brightPurple":       "#bfecff",
+  "brightCyan":         "#67e8f9",
+  "brightWhite":        "#f7fafc"
+}
