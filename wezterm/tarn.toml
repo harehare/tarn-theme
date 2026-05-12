@@ -1,0 +1,88 @@
+# Tarn theme for WezTerm
+# A dark theme inspired by a high-altitude glacial lake.
+# Place this file in ~/.config/wezterm/colors/tarn.toml
+#
+# Then in your wezterm.lua:
+#   config.color_scheme = "Tarn"
+
+[metadata]
+name   = "Tarn"
+author = "harehare"
+origin_url = "https://github.com/harehare/tarn-theme"
+
+[colors]
+foreground    = "#e2e8f0"
+background    = "#1e293b"
+cursor_bg     = "#67b8e3"
+cursor_border = "#67b8e3"
+cursor_fg     = "#1e293b"
+selection_bg  = "#32404f"
+selection_fg  = "#e2e8f0"
+split         = "#4a5568"
+compose_cursor = "#de935f"
+
+ansi = [
+  "#1e293b",  # black
+  "#fc8181",  # red
+  "#68d391",  # green
+  "#f6ad55",  # yellow
+  "#67b8e3",  # blue
+  "#9cdcfe",  # magenta
+  "#56d4d4",  # cyan
+  "#e2e8f0",  # white
+]
+
+brights = [
+  "#4a5568",  # bright black
+  "#feb2b2",  # bright red
+  "#9ae6b4",  # bright green
+  "#fbd38d",  # bright yellow
+  "#85d4ff",  # bright blue
+  "#bfecff",  # bright magenta
+  "#67e8f9",  # bright cyan
+  "#f7fafc",  # bright white
+]
+
+[colors.tab_bar]
+background        = "#2a3444"
+inactive_tab_edge = "#4a5568"
+
+[colors.tab_bar.active_tab]
+bg_color      = "#2a3444"
+fg_color      = "#e2e8f0"
+intensity     = "Normal"
+italic        = false
+strikethrough = false
+underline     = "None"
+
+[colors.tab_bar.inactive_tab]
+bg_color      = "#232e3d"
+fg_color      = "#94a3b8"
+intensity     = "Normal"
+italic        = false
+strikethrough = false
+underline     = "None"
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color      = "#2a3444"
+fg_color      = "#e2e8f0"
+intensity     = "Normal"
+italic        = false
+strikethrough = false
+underline     = "None"
+
+[colors.tab_bar.new_tab]
+bg_color      = "#2a3444"
+fg_color      = "#94a3b8"
+intensity     = "Normal"
+italic        = false
+strikethrough = false
+underline     = "None"
+
+[colors.tab_bar.new_tab_hover]
+bg_color      = "#32404f"
+fg_color      = "#e2e8f0"
+intensity     = "Bold"
+italic        = false
+strikethrough = false
+underline     = "None"

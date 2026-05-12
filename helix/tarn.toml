@@ -1,0 +1,216 @@
+# Tarn theme for Helix
+# A dark theme inspired by a high-altitude glacial lake.
+# Place this file in ~/.config/helix/themes/tarn.toml
+
+# ── Syntax ───────────────────────────────────────────────────────────────────
+"attribute"                        = { fg = "func" }
+
+"comment"                          = { fg = "comment", modifiers = ["italic"] }
+"comment.line"                     = { fg = "comment", modifiers = ["italic"] }
+"comment.block"                    = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation"      = { fg = "comment", modifiers = ["italic"] }
+
+"constant"                         = { fg = "constant" }
+"constant.builtin"                 = { fg = "constant" }
+"constant.builtin.boolean"         = { fg = "constant" }
+"constant.character"               = { fg = "string" }
+"constant.character.escape"        = { fg = "escape" }
+"constant.numeric"                 = { fg = "number" }
+"constant.numeric.integer"         = { fg = "number" }
+"constant.numeric.float"           = { fg = "number" }
+
+"constructor"                      = { fg = "func" }
+
+"function"                         = { fg = "func" }
+"function.builtin"                 = { fg = "func" }
+"function.call"                    = { fg = "func" }
+"function.macro"                   = { fg = "func" }
+"function.method"                  = { fg = "func" }
+"function.method.call"             = { fg = "func" }
+"function.special"                 = { fg = "func" }
+
+"keyword"                          = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control"                  = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control.conditional"      = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control.exception"        = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control.import"           = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control.repeat"           = { fg = "keyword", modifiers = ["bold"] }
+"keyword.control.return"           = { fg = "keyword", modifiers = ["bold"] }
+"keyword.directive"                = { fg = "keyword", modifiers = ["bold"] }
+"keyword.function"                 = { fg = "keyword", modifiers = ["bold"] }
+"keyword.operator"                 = { fg = "operator" }
+"keyword.storage"                  = { fg = "keyword", modifiers = ["bold"] }
+"keyword.storage.modifier"         = { fg = "keyword", modifiers = ["bold"] }
+"keyword.storage.type"             = { fg = "keyword", modifiers = ["bold"] }
+
+"label"                            = { fg = "keyword" }
+
+"module"                           = { fg = "keyword" }
+"namespace"                        = { fg = "keyword" }
+
+"operator"                         = { fg = "operator" }
+
+"property"                         = { fg = "escape" }
+
+"punctuation"                      = { fg = "operator" }
+"punctuation.bracket"              = { fg = "operator" }
+"punctuation.delimiter"            = { fg = "operator" }
+"punctuation.special"              = { fg = "escape" }
+
+"special"                          = { fg = "escape" }
+
+"string"                           = { fg = "string" }
+"string.regexp"                    = { fg = "escape" }
+"string.special"                   = { fg = "escape" }
+"string.special.path"              = { fg = "string" }
+"string.special.symbol"            = { fg = "constant" }
+"string.special.url"               = { fg = "accent", modifiers = ["underlined"] }
+
+"tag"                              = { fg = "error" }
+"tag.builtin"                      = { fg = "error" }
+"tag.attribute"                    = { fg = "func" }
+"tag.delimiter"                    = { fg = "operator" }
+
+"type"                             = { fg = "accent" }
+"type.builtin"                     = { fg = "accent", modifiers = ["italic"] }
+"type.enum.variant"                = { fg = "constant" }
+"type.parameter"                   = { fg = "accent" }
+
+"variable"                         = { fg = "variable" }
+"variable.builtin"                 = { fg = "constant" }
+"variable.other"                   = { fg = "variable" }
+"variable.other.member"            = { fg = "variable" }
+"variable.parameter"               = { fg = "variable", modifiers = ["italic"] }
+
+# ── Editor UI ────────────────────────────────────────────────────────────────
+"ui.background"                    = { bg = "bg" }
+"ui.background.separator"          = { fg = "border" }
+
+"ui.cursor"                        = { fg = "bg", bg = "accent" }
+"ui.cursor.insert"                 = { fg = "bg", bg = "fg" }
+"ui.cursor.match"                  = { fg = "accent_hi", bg = "bg_sel", modifiers = ["bold"] }
+"ui.cursor.primary"                = { fg = "bg", bg = "accent" }
+"ui.cursor.select"                 = { fg = "bg", bg = "accent" }
+
+"ui.cursorline.primary"            = { bg = "bg_panel" }
+"ui.cursorline.secondary"          = { bg = "bg_panel" }
+
+"ui.debug"                         = { fg = "warning" }
+"ui.debug.breakpoint"              = { fg = "error" }
+"ui.debug.active"                  = { fg = "warning" }
+
+"ui.gutter"                        = { bg = "bg", fg = "border" }
+"ui.gutter.selected"               = { bg = "bg_panel", fg = "fg_muted" }
+
+"ui.help"                          = { bg = "bg_dark", fg = "fg" }
+
+"ui.highlight"                     = { bg = "bg_sel" }
+"ui.highlight.frameline"           = { bg = "diff_add" }
+
+"ui.linenr"                        = { fg = "border" }
+"ui.linenr.selected"               = { fg = "fg_muted", modifiers = ["bold"] }
+
+"ui.menu"                          = { bg = "bg_dark", fg = "fg" }
+"ui.menu.scroll"                   = { fg = "fg_muted", bg = "bg_dark" }
+"ui.menu.selected"                 = { bg = "bg_sel", fg = "fg", modifiers = ["bold"] }
+
+"ui.picker.header"                 = { fg = "accent", modifiers = ["bold"] }
+"ui.picker.header.column"          = { fg = "fg_muted" }
+"ui.picker.header.column.active"   = { fg = "accent" }
+
+"ui.popup"                         = { bg = "bg_dark", fg = "fg" }
+"ui.popup.info"                    = { bg = "bg_dark", fg = "fg" }
+
+"ui.selection"                     = { bg = "bg_sel" }
+"ui.selection.primary"             = { bg = "bg_sel" }
+
+"ui.statusline"                    = { bg = "bg_panel", fg = "fg" }
+"ui.statusline.inactive"           = { bg = "bg_dark", fg = "fg_muted" }
+"ui.statusline.insert"             = { bg = "bg_panel", fg = "success" }
+"ui.statusline.normal"             = { bg = "bg_panel", fg = "fg" }
+"ui.statusline.select"             = { bg = "bg_panel", fg = "accent" }
+"ui.statusline.separator"          = { fg = "border" }
+
+"ui.text"                          = { fg = "fg" }
+"ui.text.focus"                    = { fg = "fg", modifiers = ["bold"] }
+"ui.text.inactive"                 = { fg = "fg_muted" }
+"ui.text.info"                     = { fg = "accent" }
+
+"ui.virtual"                       = { fg = "border" }
+"ui.virtual.indent-guide"          = { fg = "border" }
+"ui.virtual.inlay-hint"            = { fg = "fg_dim", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter"  = { fg = "fg_dim", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type"       = { fg = "fg_dim", modifiers = ["italic"] }
+"ui.virtual.jump-label"            = { fg = "accent", modifiers = ["bold"] }
+"ui.virtual.ruler"                 = { bg = "bg_panel" }
+"ui.virtual.whitespace"            = { fg = "bg_panel" }
+"ui.virtual.wrap"                  = { fg = "border" }
+
+"ui.window"                        = { fg = "border" }
+
+# ── Diagnostics ──────────────────────────────────────────────────────────────
+"diagnostic.error"                 = { underline = { color = "error",   style = "curl" } }
+"diagnostic.warning"               = { underline = { color = "warning", style = "curl" } }
+"diagnostic.info"                  = { underline = { color = "accent",  style = "curl" } }
+"diagnostic.hint"                  = { underline = { color = "success", style = "curl" } }
+"diagnostic.unnecessary"           = { modifiers = ["dim"] }
+"diagnostic.deprecated"            = { modifiers = ["crossed_out"] }
+
+# ── Diff ─────────────────────────────────────────────────────────────────────
+"diff.plus"                        = { fg = "success" }
+"diff.minus"                       = { fg = "error" }
+"diff.delta"                       = { fg = "warning" }
+"diff.plus.gutter"                 = { fg = "success" }
+"diff.minus.gutter"                = { fg = "error" }
+"diff.delta.gutter"                = { fg = "warning" }
+
+# ── Markup ───────────────────────────────────────────────────────────────────
+"markup.bold"                      = { fg = "fg",       modifiers = ["bold"] }
+"markup.heading"                   = { fg = "accent",   modifiers = ["bold"] }
+"markup.heading.1"                 = { fg = "accent",   modifiers = ["bold"] }
+"markup.heading.2"                 = { fg = "accent_hi",modifiers = ["bold"] }
+"markup.heading.3"                 = { fg = "func",     modifiers = ["bold"] }
+"markup.heading.4"                 = { fg = "func" }
+"markup.heading.5"                 = { fg = "variable" }
+"markup.heading.6"                 = { fg = "fg_muted" }
+"markup.italic"                    = { fg = "fg",       modifiers = ["italic"] }
+"markup.link"                      = { fg = "accent",   modifiers = ["underlined"] }
+"markup.link.label"                = { fg = "accent" }
+"markup.link.text"                 = { fg = "string" }
+"markup.link.url"                  = { fg = "func",     modifiers = ["underlined"] }
+"markup.list"                      = { fg = "accent" }
+"markup.list.checked"              = { fg = "success" }
+"markup.list.unchecked"            = { fg = "fg_muted" }
+"markup.quote"                     = { fg = "fg_muted", modifiers = ["italic"] }
+"markup.raw"                       = { fg = "string" }
+"markup.raw.block"                 = { fg = "string" }
+"markup.raw.inline"                = { fg = "string" }
+"markup.strikethrough"             = { modifiers = ["crossed_out"] }
+
+# ── Palette ──────────────────────────────────────────────────────────────────
+[palette]
+bg        = "#1e293b"
+bg_panel  = "#2a3444"
+bg_dark   = "#232e3d"
+bg_sel    = "#32404f"
+border    = "#4a5568"
+fg        = "#e2e8f0"
+fg_muted  = "#94a3b8"
+fg_dim    = "#6b7a90"
+accent    = "#67b8e3"
+accent_hi = "#85d4ff"
+keyword   = "#67b8e3"
+func      = "#56d4d4"
+string    = "#89ddff"
+number    = "#de935f"
+variable  = "#9cdcfe"
+escape    = "#67e8f9"
+operator  = "#94a3b8"
+comment   = "#7e8fa6"
+constant  = "#85d4ff"
+success   = "#68d391"
+warning   = "#f6ad55"
+error     = "#fc8181"
+diff_add  = "#1e3a2f"
+diff_del  = "#3a1e1e"
+diff_chg  = "#2a3020"
