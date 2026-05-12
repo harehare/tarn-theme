@@ -39,7 +39,7 @@ Also used in the [mq playground](https://mqlang.org/playground).
 | WezTerm           | [`wezterm/`](./wezterm/)                   | see below                                                                              |
 | iTerm2            | [`iterm2/`](./iterm2/)                     | see below                                                                              |
 | Windows Terminal  | [`windows-terminal/`](./windows-terminal/) | see below                                                                              |
-| Zellij            | [`zellij/`](./zellij/)                     | see below                                                                              |
+| Zellij            | [`zellij/`](./zellij/)                     | [`tarn.kdl`](./zellij/tarn.kdl)                                                        |
 
 ## Neovim
 
