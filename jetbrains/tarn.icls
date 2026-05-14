@@ -74,19 +74,19 @@
     <!-- Comments -->
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="7e8fa6"/>
+        <option name="FOREGROUND" value="6b7a90"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="7e8fa6"/>
+        <option name="FOREGROUND" value="6b7a90"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>
     <option name="DEFAULT_DOC_COMMENT">
       <value>
-        <option name="FOREGROUND" value="7e8fa6"/>
+        <option name="FOREGROUND" value="6b7a90"/>
         <option name="FONT_TYPE" value="2"/>
       </value>
     </option>

@@ -174,7 +174,7 @@ hl("@constant.builtin",           { fg = c.constant })
 hl("@type",                       { fg = c.accent })
 hl("@type.builtin",               { fg = c.accent, italic = true })
 
-hl("@property",                   { fg = c.variable })
+hl("@property",                   { fg = c.escape })
 hl("@attribute",                  { fg = c.func })
 
 hl("@operator",                   { link = "Operator" })

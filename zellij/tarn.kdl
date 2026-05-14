@@ -28,7 +28,7 @@ themes {
         // Pale steel blue on dark navy fg — soft, on-theme, easy to read.
         text_selected {
             base       30  41  59    // #1e293b (tarn navy)
-            background 168 197 224   // #a8c5e0 (pale steel blue)
+            background 50  64  79    // #32404f
             emphasis_0 30  41  59
             emphasis_1 30  41  59
             emphasis_2 30  41  59
@@ -72,7 +72,7 @@ themes {
         }
         table_cell_selected {
             base       30  41  59
-            background 168 197 224   // pale steel blue, matches text_selected
+            background 50  64  79    // #32404f
             emphasis_0 30  41  59
             emphasis_1 30  41  59
             emphasis_2 30  41  59
@@ -88,7 +88,7 @@ themes {
         }
         list_selected {
             base       30  41  59
-            background 168 197 224
+            background 50  64  79    // #32404f
             emphasis_0 30  41  59
             emphasis_1 30  41  59
             emphasis_2 30  41  59
