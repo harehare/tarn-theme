@@ -8,7 +8,7 @@
 [colors.primary]
 background = "#1e293b"
 foreground = "#e2e8f0"
-dim_foreground = "#94a3b8"
+dim_foreground = "#6b7a90"
 bright_foreground = "#f7fafc"
 
 [colors.cursor]
@@ -63,4 +63,4 @@ yellow  = "#f6ad5588"
 blue    = "#67b8e388"
 magenta = "#9cdcfe88"
 cyan    = "#56d4d488"
-white   = "#94a3b8"
+white   = "#6b7a90"
