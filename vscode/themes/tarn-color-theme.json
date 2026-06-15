@@ -491,7 +491,6 @@
       }
     }
   ],
-  "semanticHighlighting": true,
   "semanticTokenColors": {
     "namespace":                        "#67b8e3",
     "class":                            "#67b8e3",
@@ -511,7 +510,6 @@
     "variable":                         "#9cdcfe",
     "variable.readonly":                "#85d4ff",
     "variable.defaultLibrary":          "#85d4ff",
-    "parameter":                        { "foreground": "#9cdcfe", "italic": true },
     "keyword":                          "#bb9af7",
     "modifier":                         "#bb9af7",
     "macro":                            "#bb9af7",
