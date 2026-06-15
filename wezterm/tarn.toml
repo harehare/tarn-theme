@@ -22,7 +22,7 @@ split         = "#4a5568"
 compose_cursor = "#de935f"
 
 ansi = [
-  "#1e293b",  # black
+  "#162032",  # black
   "#fc8181",  # red
   "#68d391",  # green
   "#f6ad55",  # yellow
