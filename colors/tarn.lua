@@ -17,7 +17,7 @@ local c = {
   fg_dim    = "#6b7a90",
   accent    = "#67b8e3",
   accent_hi = "#85d4ff",
-  keyword   = "#67b8e3",
+  keyword   = "#bb9af7",
   func      = "#56d4d4",
   string    = "#89ddff",
   number    = "#de935f",
@@ -29,6 +29,7 @@ local c = {
   success   = "#68d391",
   warning   = "#f6ad55",
   error     = "#fc8181",
+  tag       = "#e879a3",
   diff_add  = "#1e3a2f",
   diff_del  = "#3a1e1e",
   diff_chg  = "#2a3020",
@@ -182,7 +183,7 @@ hl("@punctuation.delimiter",      { fg = c.operator })
 hl("@punctuation.bracket",        { fg = c.operator })
 hl("@punctuation.special",        { fg = c.escape })
 
-hl("@tag",                        { fg = c.error })
+hl("@tag",                        { fg = c.tag })
 hl("@tag.attribute",              { fg = c.func })
 hl("@tag.delimiter",              { fg = c.operator })
 
@@ -278,3 +279,94 @@ hl("NvimTreeGitDirty",            { fg = c.warning })
 hl("NvimTreeGitNew",              { fg = c.success })
 hl("NvimTreeGitDeleted",          { fg = c.error })
 hl("NvimTreeIndentMarker",        { fg = c.border })
+
+-- ── blink.cmp ────────────────────────────────────────────────────────────────
+hl("BlinkCmpMenu",                         { bg = c.bg_dark,  fg = c.fg })
+hl("BlinkCmpMenuBorder",                   { bg = c.bg_dark,  fg = c.border })
+hl("BlinkCmpMenuSelection",                { bg = c.bg_sel,   fg = c.fg,       bold = true })
+hl("BlinkCmpScrollBarThumb",               { bg = c.border })
+hl("BlinkCmpScrollBarGutter",              { bg = c.bg_dark })
+hl("BlinkCmpLabel",                        { fg = c.fg })
+hl("BlinkCmpLabelDeprecated",              { fg = c.fg_muted, strikethrough = true })
+hl("BlinkCmpLabelMatch",                   { fg = c.accent,   bold = true })
+hl("BlinkCmpKindFunction",                 { fg = c.func })
+hl("BlinkCmpKindKeyword",                  { fg = c.keyword })
+hl("BlinkCmpKindVariable",                 { fg = c.variable })
+hl("BlinkCmpKindConstant",                 { fg = c.constant })
+hl("BlinkCmpKindField",                    { fg = c.variable })
+hl("BlinkCmpKindProperty",                 { fg = c.escape })
+hl("BlinkCmpKindMethod",                   { fg = c.func })
+hl("BlinkCmpKindText",                     { fg = c.fg_muted })
+hl("BlinkCmpKindModule",                   { fg = c.accent })
+hl("BlinkCmpKindClass",                    { fg = c.accent })
+hl("BlinkCmpKindInterface",                { fg = c.accent })
+hl("BlinkCmpKindStruct",                   { fg = c.accent })
+hl("BlinkCmpKindEnum",                     { fg = c.accent })
+hl("BlinkCmpKindEnumMember",               { fg = c.constant })
+hl("BlinkCmpKindSnippet",                  { fg = c.escape })
+hl("BlinkCmpDoc",                          { bg = c.bg_dark,  fg = c.fg })
+hl("BlinkCmpDocBorder",                    { bg = c.bg_dark,  fg = c.border })
+hl("BlinkCmpDocSeparator",                 { fg = c.border })
+hl("BlinkCmpDocCursorLine",                { bg = c.bg_panel })
+hl("BlinkCmpSignatureHelp",                { bg = c.bg_dark,  fg = c.fg })
+hl("BlinkCmpSignatureHelpBorder",          { bg = c.bg_dark,  fg = c.border })
+hl("BlinkCmpSignatureHelpActiveParameter", { bg = c.bg_sel,   fg = c.accent,   bold = true })
+
+-- ── snacks.nvim ───────────────────────────────────────────────────────────────
+hl("SnacksNotifier",                       { bg = c.bg_dark,  fg = c.fg })
+hl("SnacksNotifierBorder",                 { bg = c.bg_dark,  fg = c.border })
+hl("SnacksNotifierInfo",                   { fg = c.accent })
+hl("SnacksNotifierWarn",                   { fg = c.warning })
+hl("SnacksNotifierError",                  { fg = c.error })
+hl("SnacksNotifierDebug",                  { fg = c.fg_muted })
+hl("SnacksNotifierTrace",                  { fg = c.fg_dim })
+hl("SnacksDashboardHeader",                { fg = c.accent,   bold = true })
+hl("SnacksDashboardFooter",                { fg = c.fg_dim,   italic = true })
+hl("SnacksDashboardTitle",                 { fg = c.accent,   bold = true })
+hl("SnacksDashboardDesc",                  { fg = c.fg })
+hl("SnacksDashboardKey",                   { fg = c.keyword,  bold = true })
+hl("SnacksDashboardIcon",                  { fg = c.accent })
+hl("SnacksDashboardSpecial",               { fg = c.func })
+hl("SnacksPicker",                         { bg = c.bg_dark,  fg = c.fg })
+hl("SnacksPickerBorder",                   { bg = c.bg_dark,  fg = c.border })
+hl("SnacksPickerTitle",                    { bg = c.bg_dark,  fg = c.accent,   bold = true })
+hl("SnacksPickerInputBorder",              { fg = c.accent })
+hl("SnacksPickerSelection",                { bg = c.bg_sel,   fg = c.fg })
+hl("SnacksPickerMatch",                    { fg = c.accent,   bold = true })
+
+-- ── fzf-lua ───────────────────────────────────────────────────────────────────
+hl("FzfLuaNormal",                         { bg = c.bg_dark,  fg = c.fg })
+hl("FzfLuaBorder",                         { bg = c.bg_dark,  fg = c.border })
+hl("FzfLuaTitle",                          { bg = c.bg_dark,  fg = c.accent,   bold = true })
+hl("FzfLuaPreviewTitle",                   { bg = c.bg_dark,  fg = c.accent,   bold = true })
+hl("FzfLuaPreviewBorder",                  { fg = c.border })
+hl("FzfLuaPreviewNormal",                  { bg = c.bg_dark })
+hl("FzfLuaFzfCursorLine",                  { bg = c.bg_sel })
+hl("FzfLuaFzfMatch",                       { fg = c.accent,   bold = true })
+hl("FzfLuaFzfPointer",                     { fg = c.accent })
+hl("FzfLuaFzfMarker",                      { fg = c.warning })
+hl("FzfLuaFzfSeparator",                   { fg = c.border })
+hl("FzfLuaFzfScrollbar",                   { fg = c.border })
+hl("FzfLuaFzfGutter",                      { bg = c.bg_dark })
+
+-- ── render-markdown.nvim ──────────────────────────────────────────────────────
+hl("RenderMarkdownH1",                     { fg = c.accent,    bold = true })
+hl("RenderMarkdownH2",                     { fg = c.accent_hi, bold = true })
+hl("RenderMarkdownH3",                     { fg = c.func,      bold = true })
+hl("RenderMarkdownH4",                     { fg = c.func })
+hl("RenderMarkdownH5",                     { fg = c.variable })
+hl("RenderMarkdownH6",                     { fg = c.fg_muted })
+hl("RenderMarkdownH1Bg",                   { bg = c.bg_panel })
+hl("RenderMarkdownH2Bg",                   { bg = c.bg_panel })
+hl("RenderMarkdownH3Bg",                   { bg = c.bg_panel })
+hl("RenderMarkdownCode",                   { bg = c.bg_dark })
+hl("RenderMarkdownCodeInline",             { bg = c.bg_dark })
+hl("RenderMarkdownBullet",                 { fg = c.accent })
+hl("RenderMarkdownQuote",                  { fg = c.fg_muted, italic = true })
+hl("RenderMarkdownLink",                   { fg = c.accent,   underline = true })
+hl("RenderMarkdownDash",                   { fg = c.border })
+hl("RenderMarkdownChecked",                { fg = c.success })
+hl("RenderMarkdownUnchecked",              { fg = c.fg_muted })
+hl("RenderMarkdownTableHead",              { fg = c.accent,   bold = true })
+hl("RenderMarkdownTableRow",               { fg = c.fg })
+hl("RenderMarkdownTableFill",              { fg = c.border })
