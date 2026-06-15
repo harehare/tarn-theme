@@ -40,7 +40,7 @@
     <!-- Keywords -->
     <option name="DEFAULT_KEYWORD">
       <value>
-        <option name="FOREGROUND" value="bb9af7"/>
+        <option name="FOREGROUND" value="67b8e3"/>
         <option name="FONT_TYPE" value="1"/>
       </value>
     </option>
@@ -243,12 +243,12 @@
     <!-- Tags / Markup -->
     <option name="DEFAULT_TAG">
       <value>
-        <option name="FOREGROUND" value="e879a3"/>
+        <option name="FOREGROUND" value="fc8181"/>
       </value>
     </option>
     <option name="DEFAULT_MARKUP_TAG">
       <value>
-        <option name="FOREGROUND" value="e879a3"/>
+        <option name="FOREGROUND" value="fc8181"/>
       </value>
     </option>
     <option name="DEFAULT_MARKUP_ATTRIBUTE">

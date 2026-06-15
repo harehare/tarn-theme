@@ -5,7 +5,7 @@ themes {
         // Base 16-color palette (used by terminal output inside panes).
         bg      "#1e293b"
         fg      "#e2e8f0"
-        black   "#162032"
+        black   "#1e293b"
         red     "#fc8181"
         green   "#67b8e3"
         yellow  "#f6ad55"
