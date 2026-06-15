@@ -66,8 +66,8 @@
 "string.special.symbol"            = { fg = "constant" }
 "string.special.url"               = { fg = "accent", modifiers = ["underlined"] }
 
-"tag"                              = { fg = "error" }
-"tag.builtin"                      = { fg = "error" }
+"tag"                              = { fg = "tag" }
+"tag.builtin"                      = { fg = "tag" }
 "tag.attribute"                    = { fg = "func" }
 "tag.delimiter"                    = { fg = "operator" }
 
@@ -199,7 +199,7 @@ fg_muted  = "#94a3b8"
 fg_dim    = "#6b7a90"
 accent    = "#67b8e3"
 accent_hi = "#85d4ff"
-keyword   = "#67b8e3"
+keyword   = "#bb9af7"
 func      = "#56d4d4"
 string    = "#89ddff"
 number    = "#de935f"
@@ -211,6 +211,7 @@ constant  = "#85d4ff"
 success   = "#68d391"
 warning   = "#f6ad55"
 error     = "#fc8181"
+tag       = "#e879a3"
 diff_add  = "#1e3a2f"
 diff_del  = "#3a1e1e"
 diff_chg  = "#2a3020"

@@ -94,7 +94,7 @@
 
     "terminal.background": "#1e293b",
     "terminal.foreground": "#e2e8f0",
-    "terminal.ansiBlack": "#1e293b",
+    "terminal.ansiBlack": "#162032",
     "terminal.ansiBlue": "#67b8e3",
     "terminal.ansiBrightBlue": "#85d4ff",
     "terminal.ansiCyan": "#67b8e3",
@@ -204,7 +204,33 @@
     "peekViewResult.selectionForeground": "#e2e8f0",
     "peekViewTitle.background": "#2a3444",
     "peekViewTitleDescription.foreground": "#94a3b8",
-    "peekViewTitleLabel.foreground": "#e2e8f0"
+    "peekViewTitleLabel.foreground": "#e2e8f0",
+
+    "editorBracketHighlight.foreground1": "#67b8e3",
+    "editorBracketHighlight.foreground2": "#56d4d4",
+    "editorBracketHighlight.foreground3": "#de935f",
+    "editorBracketHighlight.foreground4": "#68d391",
+    "editorBracketHighlight.foreground5": "#bb9af7",
+    "editorBracketHighlight.foreground6": "#f6ad55",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#fc8181",
+    "editorBracketPairGuide.activeBackground1": "#67b8e366",
+    "editorBracketPairGuide.activeBackground2": "#56d4d466",
+    "editorBracketPairGuide.activeBackground3": "#de935f66",
+    "editorBracketPairGuide.activeBackground4": "#68d39166",
+    "editorBracketPairGuide.activeBackground5": "#bb9af766",
+    "editorBracketPairGuide.activeBackground6": "#f6ad5566",
+
+    "minimap.background":                  "#1e293b",
+    "minimap.selectionHighlight":          "#32404f80",
+    "minimap.findMatchHighlight":          "#67b8e380",
+    "minimap.errorHighlight":              "#fc818180",
+    "minimap.warningHighlight":            "#f6ad5580",
+    "minimapSlider.background":            "#4a556833",
+    "minimapSlider.hoverBackground":       "#4a556855",
+    "minimapSlider.activeBackground":      "#4a556877",
+    "minimapGutter.addedBackground":       "#68d39180",
+    "minimapGutter.modifiedBackground":    "#f6ad5580",
+    "minimapGutter.deletedBackground":     "#fc818180"
   },
   "tokenColors": [
     {
@@ -226,7 +252,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#67b8e3",
+        "foreground": "#bb9af7",
         "fontStyle": "bold"
       }
     },
@@ -390,7 +416,7 @@
       "name": "Tags",
       "scope": ["entity.name.tag", "meta.tag"],
       "settings": {
-        "foreground": "#fc8181"
+        "foreground": "#e879a3"
       }
     },
     {
@@ -464,5 +490,37 @@
         "foreground": "#fc8181"
       }
     }
-  ]
+  ],
+  "semanticTokenColors": {
+    "namespace":                        "#67b8e3",
+    "class":                            "#67b8e3",
+    "class.declaration":                { "foreground": "#67b8e3", "bold": true },
+    "interface":                        { "foreground": "#67b8e3", "italic": true },
+    "struct":                           "#67b8e3",
+    "enum":                             "#67b8e3",
+    "enumMember":                       "#85d4ff",
+    "typeParameter":                    { "foreground": "#67b8e3", "italic": true },
+    "type":                             "#67b8e3",
+    "function":                         "#56d4d4",
+    "function.declaration":             "#56d4d4",
+    "method":                           "#56d4d4",
+    "method.declaration":               "#56d4d4",
+    "property":                         "#67e8f9",
+    "property.readonly":                "#85d4ff",
+    "variable":                         "#9cdcfe",
+    "variable.readonly":                "#85d4ff",
+    "variable.defaultLibrary":          "#85d4ff",
+    "keyword":                          "#bb9af7",
+    "modifier":                         "#bb9af7",
+    "macro":                            "#bb9af7",
+    "string":                           "#89ddff",
+    "number":                           "#de935f",
+    "boolean":                          "#85d4ff",
+    "comment":                          { "foreground": "#6b7a90", "italic": true },
+    "decorator":                        "#56d4d4",
+    "builtinAttribute":                 "#56d4d4",
+    "lifetime":                         { "foreground": "#bb9af7", "italic": true },
+    "selfParameter":                    { "foreground": "#85d4ff", "italic": true },
+    "builtinType":                      { "foreground": "#67b8e3", "italic": true }
+  }
 }
