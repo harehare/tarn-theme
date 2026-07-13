@@ -36,7 +36,7 @@
 1. Open **Extensions** (`Ctrl+Shift+X` / `Cmd+Shift+X`)
 2. Search for **Tarn**
 3. Click **Install**
-4. Open Command Palette → **Preferences: Color Theme** → select **Tarn**
+4. Open Command Palette → **Preferences: Color Theme** → select **Tarn** or **Tarn Light**
 
 ### Via CLI
 
