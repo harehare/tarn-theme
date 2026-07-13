@@ -2,7 +2,7 @@
   "name": "tarn-theme",
   "displayName": "Tarn Theme",
   "description": "A dark theme inspired by a high-altitude glacial lake — deep navy, steel blue, teal functions, and light azure strings.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "harehare",
   "license": "MIT",
   "icon": "icon.png",
@@ -23,12 +23,22 @@
   "keywords": [
     "theme",
     "dark",
+    "dark-theme",
+    "color-theme",
+    "vscode-theme",
     "tarn",
     "blue",
+    "navy",
     "teal",
     "cyan",
     "slate",
-    "color-theme"
+    "azure",
+    "syntax-highlighting",
+    "low-contrast",
+    "eye-friendly",
+    "minimal",
+    "light-theme",
+    "light"
   ],
   "galleryBanner": {
     "color": "#1e293b",
@@ -40,6 +50,11 @@
         "label": "Tarn",
         "uiTheme": "vs-dark",
         "path": "./themes/tarn-color-theme.json"
+      },
+      {
+        "label": "Tarn Light",
+        "uiTheme": "vs",
+        "path": "./themes/tarn-light-color-theme.json"
       }
     ]
   }
