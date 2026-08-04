@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.harehare.tarn-theme</id>
+  <name>Tarn Theme</name>
+  <version>0.1.0</version>
+  <vendor url="https://github.com/harehare">harehare</vendor>
+
+  <description><![CDATA[
+    <p>
+      <b>Tarn</b> is a dark theme inspired by the stillness of a high-altitude glacial lake —
+      deep navy depths, steel blue shimmers, and teal-to-azure syntax highlighting.
+    </p>
+    <p>
+      Installing this plugin adds both the <b>Tarn</b> UI theme (tool windows, tabs, dialogs,
+      toolbars) and the matching <b>Tarn</b> editor color scheme. Select it under
+      <b>Settings → Appearance &amp; Behavior → Appearance → Theme</b>.
+    </p>
+    <p>
+      Ports for VS Code, Neovim, Zed, Helix, Alacritty, WezTerm, iTerm2, Windows Terminal and
+      Zellij live in the same repository:
+      <a href="https://github.com/harehare/tarn-theme">harehare/tarn-theme</a>.
+    </p>
+  ]]></description>
+
+  <change-notes><![CDATA[
+    <ul>
+      <li><b>0.1.0</b> — Initial release: Tarn UI theme plus the bundled Tarn editor color scheme.</li>
+    </ul>
+  ]]></change-notes>
+
+  <idea-version since-build="241"/>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <themeProvider id="a644394e-a1e2-4d18-a417-c64b7be2bde3" path="/themes/tarn.theme.json"/>
+  </extensions>
+</idea-plugin>

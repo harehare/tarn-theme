@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/harehare/tarn-theme/main/icon.svg" width="80" alt="Tarn">
   <h1>Tarn Theme for JetBrains IDEs</h1>
-  <p>A dark color scheme for JetBrains IDEs inspired by the stillness of a high-altitude glacial lake — deep navy depths, steel blue shimmers, and teal-to-azure syntax highlighting.</p>
+  <p>A dark theme for JetBrains IDEs inspired by the stillness of a high-altitude glacial lake — deep navy depths, steel blue shimmers, and teal-to-azure syntax highlighting.</p>
 
   [![License: MIT](https://img.shields.io/badge/license-MIT-67b8e3?style=flat-square&labelColor=1e293b)](../LICENSE)
 </div>
@@ -14,20 +14,33 @@
   <img src="https://raw.githubusercontent.com/harehare/tarn-theme/main/screenshots/mq.png" width="32%" alt="mq">
 </div>
 
-## Supported IDEs
+Two pieces, two ways to install:
 
-Works with any JetBrains IDE that supports `.icls` color schemes:
+- `tarn.theme.json` — the **UI theme** (tool windows, tabs, dialogs). Only installable as a plugin.
+- `tarn.icls` — the **editor color scheme**. Importable on its own.
 
-- IntelliJ IDEA
-- WebStorm
-- PyCharm
-- GoLand
-- CLion
-- Rider
-- RubyMine
-- PhpStorm
+Requires a JetBrains IDE on 2024.1 or newer.
 
-## Color Palette
+## Installation
+
+### UI theme + editor scheme
+
+```bash
+./build.sh   # → tarn-theme-0.1.0.zip
+```
+
+**Settings** (`Ctrl+Alt+S` / `Cmd+,`) → **Plugins** → ⚙ → **Install Plugin from Disk…** →
+select the zip → restart → **Appearance & Behavior → Appearance** → **Theme: Tarn**.
+This switches the editor color scheme too.
+
+### Editor scheme only
+
+**Settings** → **Editor → Color Scheme** → ⚙ → **Import Scheme…** → select `tarn.icls`.
+
+> Don't do both — you'd end up with two schemes named **Tarn**.
+
+<details>
+<summary>Color palette</summary>
 
 | Role       | Hex       | Preview |
 | ---------- | --------- | ------- |
@@ -41,25 +54,26 @@ Works with any JetBrains IDE that supports `.icls` color schemes:
 | Comments   | `#7e8fa6` | ![](https://img.shields.io/badge/-%237e8fa6-7e8fa6?style=flat-square) |
 | Operators  | `#94a3b8` | ![](https://img.shields.io/badge/-%2394a3b8-94a3b8?style=flat-square) |
 
-## Installation
+</details>
 
-### Via Settings UI (recommended)
+<details>
+<summary>Development</summary>
 
-1. Open **Settings** (`Ctrl+Alt+S` / `Cmd+,`)
-2. Go to **Editor → Color Scheme**
-3. Click the gear icon ⚙ → **Import Scheme…**
-4. Select `tarn.icls`
-5. Choose **Tarn** from the scheme dropdown
+`build.sh` needs only `zip` — a theme plugin has no compiled code, so there is no
+Gradle or JDK involved.
 
-### Manual
+- `tarn.theme.json` — named colors in `colors`, component keys in `ui`, platform icon
+  recoloring in `icons.ColorPalette`. Unrecognized keys are ignored, so one file can
+  cover several platform versions.
+- `tarn.icls` — edit by hand, or export over it from the IDE (**Editor → Color Scheme**
+  → ⚙ → **Export…**). `build.sh` copies it into the plugin as `tarn.xml`: the platform
+  ignores an `editorScheme` path ending in `.icls`, though the format is identical.
 
-Copy `tarn.icls` to the IDE's color scheme directory:
+After a change, bump `<version>` in `plugin.xml` (the IDE won't replace a plugin with
+the same version), re-run `./build.sh`, and reinstall. `build/` and the `.zip` are
+gitignored.
 
-- **macOS**: `~/Library/Application Support/JetBrains/<IDE><version>/colors/`
-- **Linux**: `~/.config/JetBrains/<IDE><version>/colors/`
-- **Windows**: `%APPDATA%\JetBrains\<IDE><version>\colors\`
-
-Then restart the IDE and select **Tarn** in **Editor → Color Scheme**.
+</details>
 
 ## License
 

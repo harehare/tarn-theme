@@ -33,7 +33,7 @@ Also used in the [mq playground](https://mqlang.org/playground).
 | VS Code           | [`vscode/`](./vscode/)                     | [Marketplace](https://marketplace.visualstudio.com/items?itemName=harehare.tarn-theme) |
 | Neovim            | [`nvim/`](./nvim/)                         | see below                                                                              |
 | Zed               | [`zed/`](./zed/)                           | see below                                                                              |
-| JetBrains IDEs    | [`jetbrains/`](./jetbrains/)               | see below                                                                              |
+| JetBrains IDEs    | [`jetbrains/`](./jetbrains/)               | see below (UI theme + editor scheme)                                                   |
 | Helix             | [`helix/`](./helix/)                       | see below                                                                              |
 | Alacritty         | [`alacritty/`](./alacritty/)               | see below                                                                              |
 | WezTerm           | [`wezterm/`](./wezterm/)                   | see below                                                                              |
@@ -80,14 +80,18 @@ Then open the theme selector (`Cmd+Shift+P` → `theme selector: toggle`) and ch
 
 ## JetBrains IDEs
 
-1. Open **Settings** (`Ctrl+Alt+S` / `Cmd+,`) → **Editor → Color Scheme**
-2. Click the gear icon ⚙ → **Import Scheme…** → select `jetbrains/tarn.icls`
-3. Choose **Tarn** from the scheme dropdown
+A UI theme has to be a plugin, so build one (needs only `zip`):
 
-Or copy manually:
-- **macOS**: `~/Library/Application Support/JetBrains/<IDE><version>/colors/`
-- **Linux**: `~/.config/JetBrains/<IDE><version>/colors/`
-- **Windows**: `%APPDATA%\JetBrains\<IDE><version>\colors\`
+```bash
+cd jetbrains && ./build.sh
+```
+
+Then **Settings** → **Plugins** → ⚙ → **Install Plugin from Disk…** → select
+`jetbrains/tarn-theme-0.1.0.zip`, restart, and set **Theme** to **Tarn**. This themes
+the UI and the editor.
+
+For editor colors only: **Editor → Color Scheme** → ⚙ → **Import Scheme…** → select
+`jetbrains/tarn.icls`. See [`jetbrains/README.md`](./jetbrains/README.md).
 
 ## Helix
 

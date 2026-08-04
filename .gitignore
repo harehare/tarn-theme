@@ -1,3 +1,5 @@
 .claude/settings.local.json
 .DS_Store
 *.vsix
+jetbrains/build/
+jetbrains/*.zip
