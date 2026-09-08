@@ -7,11 +7,11 @@ themes {
         fg      "#e2e8f0"
         black   "#162032"
         red     "#fc8181"
-        green   "#67b8e3"
+        green   "#68d391"
         yellow  "#f6ad55"
-        blue    "#4a9fc8"
+        blue    "#67b8e3"
         magenta "#b794f4"
-        cyan    "#85d4ff"
+        cyan    "#56d4d4"
         white   "#e2e8f0"
         orange  "#f6ad55"
 
@@ -25,14 +25,14 @@ themes {
             emphasis_3 246 173 85    // #f6ad55
         }
         // UI text — selected (mouse selection, list/table highlight).
-        // Pale steel blue on dark navy fg — soft, on-theme, easy to read.
+        // Bright text and colored emphasis on slate selection — easy to read.
         text_selected {
-            base       30  41  59    // #1e293b (tarn navy)
+            base       226 232 240   // #e2e8f0
             background 50  64  79    // #32404f
-            emphasis_0 30  41  59
-            emphasis_1 30  41  59
-            emphasis_2 30  41  59
-            emphasis_3 30  41  59
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
         }
 
         // Tab ribbon — inactive tab.
@@ -71,12 +71,12 @@ themes {
             emphasis_3 246 173 85
         }
         table_cell_selected {
-            base       30  41  59
+            base       226 232 240
             background 50  64  79    // #32404f
-            emphasis_0 30  41  59
-            emphasis_1 30  41  59
-            emphasis_2 30  41  59
-            emphasis_3 30  41  59
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
         }
         list_unselected {
             base       226 232 240
@@ -87,12 +87,12 @@ themes {
             emphasis_3 246 173 85
         }
         list_selected {
-            base       30  41  59
+            base       226 232 240
             background 50  64  79    // #32404f
-            emphasis_0 30  41  59
-            emphasis_1 30  41  59
-            emphasis_2 30  41  59
-            emphasis_3 30  41  59
+            emphasis_0 103 184 227
+            emphasis_1 133 212 255
+            emphasis_2 86  212 212
+            emphasis_3 246 173 85
         }
 
         frame_selected {

@@ -95,10 +95,11 @@
     "terminal.background": "#1e293b",
     "terminal.foreground": "#e2e8f0",
     "terminal.ansiBlack": "#162032",
+    "terminal.ansiBrightBlack": "#4a5568",
     "terminal.ansiBlue": "#67b8e3",
     "terminal.ansiBrightBlue": "#85d4ff",
-    "terminal.ansiCyan": "#67b8e3",
-    "terminal.ansiBrightCyan": "#85d4ff",
+    "terminal.ansiCyan": "#56d4d4",
+    "terminal.ansiBrightCyan": "#67e8f9",
     "terminal.ansiGreen": "#68d391",
     "terminal.ansiBrightGreen": "#9ae6b4",
     "terminal.ansiMagenta": "#b794f4",
@@ -237,7 +238,7 @@
       "name": "Comments",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#6b7a90",
+        "foreground": "#8191a8",
         "fontStyle": "italic"
       }
     },
@@ -516,7 +517,7 @@
     "string":                           "#89ddff",
     "number":                           "#de935f",
     "boolean":                          "#85d4ff",
-    "comment":                          { "foreground": "#6b7a90", "italic": true },
+    "comment":                          { "foreground": "#8191a8", "italic": true },
     "decorator":                        "#56d4d4",
     "builtinAttribute":                 "#56d4d4",
     "lifetime":                         { "foreground": "#bb9af7", "italic": true },

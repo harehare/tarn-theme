@@ -95,6 +95,7 @@
     "terminal.background": "#f8fafc",
     "terminal.foreground": "#0f172a",
     "terminal.ansiBlack": "#334155",
+    "terminal.ansiBrightBlack": "#64748b",
     "terminal.ansiBlue": "#0369a1",
     "terminal.ansiBrightBlue": "#0ea5e9",
     "terminal.ansiCyan": "#0369a1",
@@ -464,5 +465,37 @@
         "foreground": "#dc2626"
       }
     }
-  ]
+  ],
+  "semanticTokenColors": {
+    "namespace":                        "#0369a1",
+    "class":                            "#0369a1",
+    "class.declaration":                { "foreground": "#0369a1", "bold": true },
+    "interface":                        { "foreground": "#0369a1", "italic": true },
+    "struct":                           "#0369a1",
+    "enum":                             "#0369a1",
+    "enumMember":                       "#075985",
+    "typeParameter":                    { "foreground": "#0369a1", "italic": true },
+    "type":                             "#0369a1",
+    "function":                         "#0e7490",
+    "function.declaration":             "#0e7490",
+    "method":                           "#0e7490",
+    "method.declaration":               "#0e7490",
+    "property":                         "#155e75",
+    "property.readonly":                "#075985",
+    "variable":                         "#1e40af",
+    "variable.readonly":                "#075985",
+    "variable.defaultLibrary":          "#075985",
+    "keyword":                          "#7c3aed",
+    "modifier":                         "#7c3aed",
+    "macro":                            "#7c3aed",
+    "string":                           "#047857",
+    "number":                           "#c2410c",
+    "boolean":                          "#075985",
+    "comment":                          { "foreground": "#64748b", "italic": true },
+    "decorator":                        "#0e7490",
+    "builtinAttribute":                 "#0e7490",
+    "lifetime":                         { "foreground": "#7c3aed", "italic": true },
+    "selfParameter":                    { "foreground": "#075985", "italic": true },
+    "builtinType":                      { "foreground": "#0369a1", "italic": true }
+  }
 }

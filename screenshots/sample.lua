@@ -3,11 +3,11 @@ local M = {}
 
 local palette = {
   bg      = "#1e293b", -- deep navy
-  keyword = "#67b8e3", -- steel blue
+  keyword = "#bb9af7", -- glacier violet
   func    = "#56d4d4", -- teal
   string  = "#89ddff", -- light azure
   number  = "#de935f", -- warm orange
-  comment = "#6b7a90", -- muted slate
+  comment = "#8191a8", -- muted slate
 }
 
 local function clarity(depth)
