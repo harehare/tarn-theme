@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.1.7 — 2026-09-08
 
 - **palette**: add `palette.json` as the canonical role palette and CI validation for
   JSON, ANSI mappings, key accessibility colors, and Neovim entry-point parity.
