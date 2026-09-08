@@ -83,8 +83,8 @@
         "terminal.ansi.bright_yellow":      "#fbd38d",
         "terminal.ansi.blue":               "#67b8e3",
         "terminal.ansi.bright_blue":        "#85d4ff",
-        "terminal.ansi.magenta":            "#9cdcfe",
-        "terminal.ansi.bright_magenta":     "#bfecff",
+        "terminal.ansi.magenta":            "#b794f4",
+        "terminal.ansi.bright_magenta":     "#d6bcfa",
         "terminal.ansi.cyan":               "#56d4d4",
         "terminal.ansi.bright_cyan":        "#67e8f9",
         "link_text.hover":                  "#85d4ff",
@@ -131,7 +131,7 @@
           { "cursor": "#68d391", "background": "#68d39166", "selection": "#2a4f42" }
         ],
         "syntax": {
-          "comment":             { "color": "#6b7a90", "font_style": "italic" },
+          "comment":             { "color": "#8191a8", "font_style": "italic" },
           "keyword":             { "color": "#bb9af7", "font_weight": 700 },
           "operator":            { "color": "#94a3b8" },
           "function":            { "color": "#56d4d4" },

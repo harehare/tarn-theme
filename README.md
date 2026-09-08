@@ -1,7 +1,7 @@
 <div align="center">
   <img src="icon.svg" width="80" alt="Tarn">
   <h1>Tarn</h1>
-  <p>A dark color theme inspired by the stillness of a high-altitude glacial lake: deep navy depths, steel blue shimmers, and teal-to-azure light across the surface.</p>
+  <p>Dark color themes, with light variants for VS Code and Zed, inspired by the stillness of a high-altitude glacial lake: deep navy depths, steel blue shimmers, and teal-to-azure light across the surface.</p>
 </div>
 
 <div align="center">
@@ -17,13 +17,13 @@ Also used in the [mq playground](https://mqlang.org/playground).
 | Role       | Color     |             |
 | ---------- | --------- | ----------- |
 | Background | `#1e293b` | Deep navy   |
-| Keywords   | `#67b8e3` | Steel blue  |
+| Keywords   | `#bb9af7` | Glacier violet |
 | Functions  | `#56d4d4` | Teal        |
 | Strings    | `#89ddff` | Light azure |
 | Numbers    | `#de935f` | Warm orange |
 | Variables  | `#9cdcfe` | Sky blue    |
 | Properties | `#67e8f9` | Bright teal |
-| Comments   | `#6b7a90` | Muted slate |
+| Comments   | `#8191a8` | Muted slate |
 | Operators  | `#94a3b8` | Soft gray   |
 
 ## Ports
@@ -40,6 +40,10 @@ Also used in the [mq playground](https://mqlang.org/playground).
 | iTerm2            | [`iterm2/`](./iterm2/)                     | see below                                                                              |
 | Windows Terminal  | [`windows-terminal/`](./windows-terminal/) | see below                                                                              |
 | Zellij            | [`zellij/`](./zellij/)                     | [`tarn.kdl`](./zellij/tarn.kdl)                                                        |
+
+`palette.json` is the canonical palette. Run `node scripts/check-theme.mjs` after a
+palette or port change to validate JSON, ANSI consistency, accessibility-critical
+colors, and the duplicated Neovim entry point.
 
 ## Neovim
 
@@ -76,7 +80,8 @@ Copy the theme file to your Zed themes directory:
 cp zed/tarn.json ~/.config/zed/themes/
 ```
 
-Then open the theme selector (`Cmd+Shift+P` → `theme selector: toggle`) and choose **Tarn**.
+Then open the theme selector (`Cmd+Shift+P` → `theme selector: toggle`) and choose
+**Tarn** or **Tarn Light**.
 
 ## JetBrains IDEs
 

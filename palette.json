@@ -1,0 +1,45 @@
+{
+  "name": "Tarn",
+  "description": "Canonical palette for all Tarn ports. Generated or hand-maintained ports must use these role values.",
+  "ui": {
+    "background": "#1e293b",
+    "panel": "#2a3444",
+    "elevated": "#232e3d",
+    "selection": "#32404f",
+    "border": "#4a5568",
+    "foreground": "#e2e8f0",
+    "muted": "#94a3b8",
+    "dim": "#6b7a90",
+    "accent": "#67b8e3",
+    "accentBright": "#85d4ff"
+  },
+  "syntax": {
+    "keyword": "#bb9af7",
+    "function": "#56d4d4",
+    "string": "#89ddff",
+    "number": "#de935f",
+    "variable": "#9cdcfe",
+    "property": "#67e8f9",
+    "comment": "#8191a8",
+    "operator": "#94a3b8",
+    "tag": "#e879a3"
+  },
+  "ansi": {
+    "black": "#162032",
+    "red": "#fc8181",
+    "green": "#68d391",
+    "yellow": "#f6ad55",
+    "blue": "#67b8e3",
+    "magenta": "#b794f4",
+    "cyan": "#56d4d4",
+    "white": "#e2e8f0",
+    "brightBlack": "#4a5568",
+    "brightRed": "#feb2b2",
+    "brightGreen": "#9ae6b4",
+    "brightYellow": "#fbd38d",
+    "brightBlue": "#85d4ff",
+    "brightMagenta": "#d6bcfa",
+    "brightCyan": "#67e8f9",
+    "brightWhite": "#f7fafc"
+  }
+}
